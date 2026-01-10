@@ -69,14 +69,14 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span className="text-sm">
-                  Rote Landstraße 59<br />
+                  Am Alten Bahnhof 11a , <br />
                   06886 Wittenberg, Deutschland
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-                <a href="tel:+491782931142" className="text-sm hover:text-cyan-400 transition-colors">
-                  0178 2931142
+                <a href="tel:+491522476198" className="text-sm hover:text-cyan-400 transition-colors">
+                  +49 1522 4761498
                 </a>
               </li>
               <li className="flex items-center gap-3">
