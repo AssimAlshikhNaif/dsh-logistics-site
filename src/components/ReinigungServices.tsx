@@ -1,26 +1,29 @@
 import { Factory, Warehouse, HardHat, CheckCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function ReinigungServices() {
+  const { t, i18n } = useTranslation();
+
   const services = [
     {
       icon: <Factory className="w-12 h-12" />,
-      title: 'Industriereinigung',
-      description: 'Professionelle Reinigung von Produktionsanlagen, Maschinen und Industriehallen mit Spezialausrüstung.',
-      features: ['Maschinenreinigung', 'Hallenreinigung', 'Produktionsreinigung', 'Spezialreinigung'],
+      title: t('clean_serv1_title'),
+      description: t('clean_serv1_desc'),
+      features: t('clean_serv1_features', { returnObjects: true }) as string[],
       image: '/industrial-cleaning-facility.jpg'
     },
     {
       icon: <Warehouse className="w-12 h-12" />,
-      title: 'Lagerreinigung',
-      description: 'Gründliche Reinigung von Lagerhallen, Hochregallagern und Logistikzentren für optimale Hygiene.',
-      features: ['Bodenreinigung', 'Regalreinigung', 'Entstaubung', 'Desinfektionsservice'],
+      title: t('clean_serv2_title'),
+      description: t('clean_serv2_desc'),
+      features: t('clean_serv2_features', { returnObjects: true }) as string[],
       image: '/warehouse-cleaning-service.jpg'
     },
     {
       icon: <HardHat className="w-12 h-12" />,
-      title: 'Baureinigung',
-      description: 'Endreinigung nach Baumaßnahmen – von der Grobreinigung bis zur finalen Übergabe.',
-      features: ['Baugrobreinigung', 'Bauendreinigung', 'Fassadenreinigung', 'Fensterreinigung'],
+      title: t('clean_serv3_title'),
+      description: t('clean_serv3_desc'),
+      features: t('clean_serv3_features', { returnObjects: true }) as string[],
       image: '/construction-cleaning.jpg'
     }
   ];
@@ -31,10 +34,10 @@ export default function ReinigungServices() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            Spezialisierte Reinigung
+            {t('clean_header_title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Höchste Standards für Industrie und Logistik – DSH Service GmbH sorgt für Sauberkeit und Sicherheit.
+            {t('clean_header_subtitle')}
           </p>
         </div>
 
@@ -64,7 +67,7 @@ export default function ReinigungServices() {
                 <ul className="grid grid-cols-1 gap-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm text-slate-700">
-                      <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></div>
+                      <div className={`w-1.5 h-1.5 bg-cyan-500 rounded-full ${i18n.language === 'ar' ? 'ml-2' : 'mr-2'}`}></div>
                       {feature}
                     </li>
                   ))}
@@ -78,9 +81,9 @@ export default function ReinigungServices() {
         <div className="bg-cyan-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-xl">
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="max-w-xl">
-              <h3 className="text-3xl font-bold mb-4">Qualität & Zertifizierung</h3>
+              <h3 className="text-3xl font-bold mb-4">{t('clean_quality_title')}</h3>
               <p className="text-cyan-50 opacity-90">
-                Unsere Prozesse sind ISO-zertifiziert und werden von geschultem Fachpersonal mit modernster Spezialausrüstung durchgeführt.
+                {t('clean_quality_desc')}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 w-full md:w-auto">
@@ -90,7 +93,7 @@ export default function ReinigungServices() {
               </div>
               <div className="bg-white/10 backdrop-blur p-4 rounded-xl text-center">
                 <CheckCircle className="w-8 h-8 mx-auto mb-2 text-white" />
-                <span className="text-xs font-bold uppercase tracking-wider">Fachpersonal</span>
+                <span className="text-xs font-bold uppercase tracking-wider">{t('clean_staff')}</span>
               </div>
             </div>
           </div>
