@@ -4,29 +4,30 @@ import { useTranslation } from 'react-i18next';
 export default function ReinigungServices() {
   const { t, i18n } = useTranslation();
 
-  const services = [
-    {
-      icon: <Factory className="w-12 h-12" />,
-      title: t('clean_serv1_title'),
-      description: t('clean_serv1_desc'),
-      features: t('clean_serv1_features', { returnObjects: true }) as string[],
-      image: '/industrial-cleaning-facility.jpg'
-    },
-    {
-      icon: <Warehouse className="w-12 h-12" />,
-      title: t('clean_serv2_title'),
-      description: t('clean_serv2_desc'),
-      features: t('clean_serv2_features', { returnObjects: true }) as string[],
-      image: '/warehouse-cleaning-service.jpg'
-    },
-    {
-      icon: <HardHat className="w-12 h-12" />,
-      title: t('clean_serv3_title'),
-      description: t('clean_serv3_desc'),
-      features: t('clean_serv3_features', { returnObjects: true }) as string[],
-      image: '/construction-cleaning.jpg'
-    }
-  ];
+ const services = [
+  {
+    icon: <Factory className="w-12 h-12" />,
+    title: t('clean_serv1_title'),
+    description: t('clean_serv1_desc'),
+    features: t('clean_serv1_features', { returnObjects: true }) as string[],
+    image: 'https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  },
+  {
+    icon: <Warehouse className="w-12 h-12" />,
+    title: t('clean_serv2_title'),
+    description: t('clean_serv2_desc'),
+    features: t('clean_serv2_features', { returnObjects: true }) as string[],
+    image: 'https://images.pexels.com/photos/4481258/pexels-photo-4481258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  },
+  {
+    icon: <HardHat className="w-12 h-12" />,
+    title: t('clean_serv3_title'),
+    description: t('clean_serv3_desc'),
+    features: t('clean_serv3_features', { returnObjects: true }) as string[],
+    // تم التغيير لصورة عقار حديث جاهز للتسليم بنظافة فائقة
+    image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  }
+];
 
   return (
     <section id="reinigung" className="py-24 bg-slate-50">
