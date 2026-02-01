@@ -19,7 +19,7 @@ i18n
           nav_tracking: "Sendungsverfolgung",
           nav_quote: "Angebot anfordern",
           // Footer
-          footer_desc: "Ihr zuverlässiger Partner für professionelle Logistik und industrielle Spezialreinigung. Qualität und Präzision seit über 20 Jahren.",
+          footer_desc: "Ihr zuverlässiger Partner für professionelle Logistik und industrielle Spezialreinigung. Qualität und Präzision .",
           footer_certified: "Zertifizierter Fachbetrieb",
           footer_services: "Leistungen",
           footer_hours: "Öffnungszeiten",
@@ -150,6 +150,28 @@ privacy_sec3_title: "Ihre Rechte",
 privacy_sec3_desc: "Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten.",
 privacy_update_note: "Stand: Januar 2026. Diese Datenschutzerklärung kann bei Bedarf aktualisiert werden.",
 
+link_agb: "AGB",
+agb_title: "Allgemeine Geschäftsbedingungen",
+agb_sec1_title: "Geltungsbereich",
+agb_sec1_desc: "Diese Geschäftsbedingungen gelten für alle Verträge zwischen der DSH Service GmbH und ihren Kunden über Logistik- und Reinigungsdienstleistungen.",
+agb_sec2_title: "Vertragsschluss",
+agb_sec2_desc: "Ein Vertrag kommt zustande, wenn der Kunde unser Angebot schriftlich oder per E-Mail bestätigt.",
+
+about_title: "Über uns",
+about_vision_text: "DSH Service GmbH ist ein modernes Dienstleistungsunternehmen mit klarem Fokus auf Exzellenz in Logistik und Reinigung. Als junges Unternehmen aus Wittenberg bringen wir frischen Wind, modernste Standards und absolute Verlässlichkeit in die Branche.",
+val_modern: "Modernität",
+val_modern_desc: "Wir nutzen neueste Technik und effiziente Prozesse für maximale Leistung.",
+val_trust: "Vertrauen",
+val_trust_desc: "Ehrlichkeit und Transparenz gegenüber unseren Kunden sind unser Fundament.",
+val_client: "Kundennähe",
+val_client_desc: "Wir hören zu und finden individuelle Lösungen, die genau zu Ihnen passen.",
+val_quality: "Präzision",
+val_quality_desc: "Logistik und Reinigung erfordern höchste Genauigkeit in jedem Detail.",
+about_promise_title: "Unser Versprechen an Sie",
+about_promise_text: "Obwohl wir ein neues Unternehmen sind, bringen wir jahrelange Expertise in unseren Teams zusammen. Wir garantieren Ihnen Flexibilität, die große Konzerne oft vermissen lassen, kombiniert mit der Professionalität, die Ihr Geschäft verdient.",
+
+
+
 
         }
       },
@@ -162,7 +184,7 @@ privacy_update_note: "Stand: Januar 2026. Diese Datenschutzerklärung kann bei B
           nav_cleaning: "Cleaning Service",
           nav_tracking: "Tracking",
           nav_quote: "Request a Quote",
-          footer_desc: "Your reliable partner for professional logistics and industrial special cleaning. Quality and precision for over 20 years.",
+          footer_desc: "Your reliable partner for professional logistics and industrial special cleaning. Quality and precision .",
           footer_certified: "Certified Specialist Company",
           footer_services: "Services",
           footer_hours: "Opening Hours",
@@ -291,6 +313,27 @@ privacy_sec3_title: "Your Rights",
 privacy_sec3_desc: "You have the right to receive information about the origin, recipient and purpose of your stored personal data free of charge at any time.",
 privacy_update_note: "As of: January 2026. This privacy policy may be updated if necessary.",
 
+// --- English (en) ---
+link_agb: "Terms & Conditions",
+agb_title: "General Terms and Conditions",
+agb_sec1_title: "Scope of Application",
+agb_sec1_desc: "These terms and conditions apply to all contracts between DSH Service GmbH and its customers for logistics and cleaning services.",
+agb_sec2_title: "Conclusion of Contract",
+agb_sec2_desc: "A contract is concluded when the customer confirms our offer in writing or via email.",
+
+about_title: "About Us",
+about_vision_text: "DSH Service GmbH is a modern service provider with a clear focus on excellence in logistics and cleaning. As a young company from Wittenberg, we bring fresh energy, modern standards, and absolute reliability to the industry.",
+val_modern: "Modernity",
+val_modern_desc: "We use the latest technology and efficient processes for maximum performance.",
+val_trust: "Trust",
+val_trust_desc: "Honesty and transparency towards our customers are our foundation.",
+val_client: "Customer Proximity",
+val_client_desc: "We listen and find individual solutions that fit your needs perfectly.",
+val_quality: "Precision",
+val_quality_desc: "Logistics and cleaning require the highest accuracy in every detail.",
+about_promise_title: "Our Promise to You",
+about_promise_text: "Although we are a new company, we bring together years of expertise in our teams. We guarantee you the flexibility that large corporations often lack, combined with the professionalism your business deserves.",
+
         }
       },
       ar: {
@@ -302,7 +345,7 @@ privacy_update_note: "As of: January 2026. This privacy policy may be updated if
           nav_cleaning: "خدمات التنظيف",
           nav_tracking: "تتبع الشحنات",
           nav_quote: "طلب عرض سعر",
-          footer_desc: "شريككم الموثوق للخدمات اللوجستية الاحترافية والتنظيف الصناعي المتخصص. الجودة والدقة لأكثر من 20 عاماً.",
+          footer_desc: "شريككم الموثوق للخدمات اللوجستية الاحترافية والتنظيف الصناعي المتخصص. الجودة والدقة .",
           footer_certified: "شركة متخصصة معتمدة",
           footer_services: "خدماتنا",
           footer_hours: "أوقات العمل",
@@ -429,6 +472,29 @@ privacy_sec2_desc: "يتم جمع جزء من البيانات لضمان توف
 privacy_sec3_title: "حقوقك",
 privacy_sec3_desc: "لديك الحق في تلقي معلومات حول مصدر ومستلم والغرض من بياناتك الشخصية المخزنة مجاناً في أي وقت.",
 privacy_update_note: "تحديث: يناير 2026. قد يتم تحديث سياسة الخصوصية هذه عند الضرورة.",
+
+// --- العربية (ar) ---
+link_agb: "الشروط والأحكام",
+agb_title: "الشروط والأحكام العامة",
+agb_sec1_title: "نطاق التطبيق",
+agb_sec1_desc: "تسري هذه الشروط والأحكام على جميع العقود المبرمة بين شركة DSH Service GmbH وعملائها فيما يتعلق بخدمات اللوجستيات والتنظيف.",
+agb_sec2_title: "إبرام العقد",
+agb_sec2_desc: "يتم إبرام العقد عندما يؤكد العميل عرضنا كتابياً أو عبر البريد الإلكتروني.",
+
+about_title: "من نحن",
+about_vision_text: "شركة DSH Service GmbH هي مزود خدمات حديث يركز بوضوح على التميز في مجالات اللوجستيات والتنظيف. كشركة شابة من مدينة فيتنبرغ، نحن نضفي روحاً جديدة، ومعايير حديثة، وموثوقية مطلقة في هذا القطاع.",
+val_modern: "الحداثة",
+val_modern_desc: "نحن نستخدم أحدث التقنيات والعمليات الفعالة لتحقيق أقصى قدر من الأداء.",
+val_trust: "الثقة",
+val_trust_desc: "الصدق والشفافية تجاه عملائنا هما حجر الأساس الذي نبني عليه عملنا.",
+val_client: "القرب من العميل",
+val_client_desc: "نحن نستمع جيداً ونبتكر حلولاً مخصصة تناسب احتياجاتك تماماً.",
+val_quality: "الدقة",
+val_quality_desc: "تتطلب اللوجستيات والتنظيف أعلى درجات الدقة في كل تفصيلة.",
+about_promise_title: "وعدنا لكم",
+about_promise_text: "على الرغم من أننا شركة جديدة، إلا أننا نجمع سنوات من الخبرة في فرق عملنا. نحن نضمن لكم المرونة التي غالباً ما تفتقر إليها الشركات الكبرى، مقترنة بالاحترافية التي يستحقها عملكم.",
+
+
         }
       }
     }

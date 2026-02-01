@@ -10,38 +10,47 @@ export default function Impressum() {
       </h1>
       
       <div className="space-y-8 leading-relaxed">
+        {/* معلومات الشركة */}
         <section>
           <h2 className="text-xl font-semibold mb-3">{t('imprint_section_1')}</h2>
-          <p className="bg-slate-50 p-6 rounded-xl border border-slate-100 shadow-sm">
-            <strong className="text-slate-900">DSH Service GmbH</strong><br />
-            Musterstraße 123<br />
-            12345 Berlin<br />
-            {t('germany')}
-          </p>
+          <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 shadow-sm">
+            <p className="text-lg font-bold text-slate-900 mb-1">DSH Service GmbH</p>
+            <p>
+              Am Alten Bahnhof 11a<br />
+              06886 Wittenberg<br />
+              {t('germany')}
+            </p>
+          </div>
         </section>
 
+        {/* التواصل والسجل التجاري */}
         <section className="grid md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-xl font-semibold mb-3">{t('imprint_contact')}</h2>
-            <p>
-              {t('phone')}: +49 (0) 123 456789<br />
-              {t('email')}: info@dsh-service.de
+            <p className="space-y-1">
+              <strong>{t('phone')}:</strong> +49 1522 4761498<br />
+              <strong>{t('email')}:</strong> info@dsh-s.de
             </p>
           </div>
           <div>
             <h2 className="text-xl font-semibold mb-3">{t('imprint_registry')}</h2>
-            <p>
-              Registergericht: Amtsgericht Berlin<br />
-              Registernummer: HRB 123456<br />
-              USt-IdNr.: DE 123456789
+            <p className="text-slate-600">
+              Registergericht: Amtsgericht Stendal<br />
+              Registernummer: [HRB الرقم هنا]<br />
+              USt-IdNr.: [الرقم الضريبي هنا]
             </p>
           </div>
         </section>
 
-        <section className="text-sm text-gray-500 border-t pt-6">
+        {/* ملاحظة قانونية */}
+        <section className="text-sm text-gray-500 border-t pt-6 italic">
           <p>{t('imprint_legal_note')}</p>
         </section>
       </div>
+
+      <footer className="mt-20 text-center text-xs text-gray-400">
+        © 2026 DSH Service GmbH | Wittenberg
+      </footer>
     </div>
   );
 }

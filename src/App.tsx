@@ -12,6 +12,8 @@ import Footer from './components/Footer';
 import Privacy from './pages/Privacy';
 import Impressum from './pages/Impressum';
 import Jobs from './pages/Jobs';
+import Agb from './pages/Agb';
+import About from './pages/About';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -56,6 +58,8 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/jobs" element={<Jobs />} />
+        <Route path="/agb" element={<Agb />} />
+        <Route path="/about" element={<About />} />
       </Routes>
 
       <Footer />
