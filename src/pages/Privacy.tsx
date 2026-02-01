@@ -28,7 +28,7 @@ export default function Privacy() {
               <div className="font-bold text-slate-800">
                 <p className="text-lg">DSH Service GmbH</p>
                 <p>Am Alten Bahnhof 11a</p>
-                <p>06886 Wittenberg, Deutschland</p>
+                <p>06886 lutherstadt wittenberg, Deutschland</p>
                 <p className="mt-2">Telefon: +49 1522 4761498</p>
                 <p>E-Mail: info@dsh-s.de</p>
               </div>

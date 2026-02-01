@@ -78,8 +78,7 @@ export default function ReinigungServices() {
           ))}
         </div>
 
-        {/* Quality Section */}
-        <div className="bg-cyan-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-xl">
+        {/* Quality Section<div className="bg-cyan-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-xl">
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="max-w-xl">
               <h3 className="text-3xl font-bold mb-4">{t('clean_quality_title')}</h3>
@@ -98,7 +97,8 @@ export default function ReinigungServices() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        
       </div>
     </section>
   );

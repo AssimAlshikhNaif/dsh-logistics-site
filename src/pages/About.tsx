@@ -15,7 +15,7 @@ export default function About() {
             {t ('about_title')}
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed">
-            {t('about_vision_text', 'DSH Service GmbH ist ein modernes Dienstleistungsunternehmen mit klarem Fokus auf Exzellenz in Logistik und Reinigung. Als junges Unternehmen aus Wittenberg bringen wir frischen Wind, modernste Standards und absolute Verlässlichkeit in die Branche.')}
+            {t('about_vision_text', 'DSH Service GmbH ist ein modernes Dienstleistungsunternehmen mit klarem Fokus auf Exzellenz in Logistik und Reinigung. Als junges Unternehmen aus lutherstadt wittenberg bringen wir frischen Wind, modernste Standards und absolute Verlässlichkeit in die Branche.')}
           </p>
         </div>
 
