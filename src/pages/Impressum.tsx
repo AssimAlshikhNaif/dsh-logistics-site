@@ -36,8 +36,8 @@ export default function Impressum() {
             <h2 className="text-xl font-semibold mb-3">{t('imprint_registry')}</h2>
             <p className="text-slate-600">
               Registergericht: Amtsgericht Stendal<br />
-              Registernummer: [HRB الرقم هنا]<br />
-              USt-IdNr.: [الرقم الضريبي هنا]
+              Registernummer: [HRB  ]<br />
+              USt-IdNr.: [  ]
             </p>
           </div>
         </section>
