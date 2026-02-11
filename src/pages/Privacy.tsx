@@ -27,7 +27,7 @@ export default function Privacy() {
               <p className="text-sm mb-2 italic text-gray-500 font-medium">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
               <div className="font-bold text-slate-800">
                 <p className="text-lg">DSH Service GmbH</p>
-                <p>Am Alten Bahnhof 11a</p>
+                <p>Am Alten Bahnhof 9</p>
                 <p>06886 lutherstadt wittenberg, Deutschland</p>
                 <p className="mt-2">Telefon: +49 1522 4761498</p>
                 <p>E-Mail: info@dsh-s.de</p>

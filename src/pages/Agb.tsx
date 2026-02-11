@@ -30,7 +30,7 @@ export default function AGB() {
       </div>
 
       <footer className="mt-16 pt-8 border-t text-sm text-gray-400 italic">
-        <p>DSH Service GmbH | Am Alten Bahnhof 11a, 06886 Wittenberg</p>
+        <p>DSH Service GmbH | Am Alten Bahnhof 9, 06886 Wittenberg</p>
       </footer>
     </div>
   );

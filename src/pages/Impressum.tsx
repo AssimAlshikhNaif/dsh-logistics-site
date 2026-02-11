@@ -16,7 +16,7 @@ export default function Impressum() {
           <div className="bg-slate-50 p-6 rounded-xl border border-slate-100 shadow-sm">
             <p className="text-lg font-bold text-slate-900 mb-1">DSH Service GmbH</p>
             <p>
-              Am Alten Bahnhof 11a<br />
+              Am Alten Bahnhof 9<br />
               06886 lutherstadt wittenberg<br />
               {t('germany')}
             </p>
