@@ -68,11 +68,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-cyan-400" />
-                <a href="tel:+4915224761498" className="hover:text-cyan-400">+49 1522 4761498</a>
+                <a href="tel:+49 163 9023 425" className="hover:text-cyan-400">+49 163 9023425</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-cyan-400" />
-                <a href="mailto:info@dsh-s.de" className="hover:text-cyan-400">info@dsh-s.de</a>
+                <a href="mailto:Aleleoue@dsh-s.de" className="hover:text-cyan-400">Aleleoue@dsh-s.de</a>
               </li>
             </ul>
           </div>
