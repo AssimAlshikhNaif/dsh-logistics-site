@@ -49,15 +49,15 @@ export default function ReinigungServices() {
           </p>
         </div>
 
-        {/* القسم الرئيسي: صورة مستودع/أرضية نظيفة ومهنية بدون وجوه + تفاصيل الخدمات */}
+        {/* القسم الرئيسي: صورة التنظيف + تفاصيل الخدمات */}
         <div className="grid lg:grid-cols-12 gap-10 items-center mb-16">
           
-          {/* صورة احترافية تعبيرية عن النظافة بدون وجوه (6 أعمدة) */}
+          {/* الصورة المحلية (6 أعمدة) */}
           <div className="lg:col-span-6 relative group">
             <div className="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[2.5rem] blur-2xl opacity-25 group-hover:opacity-45 transition duration-700"></div>
             <div className="relative h-[480px] sm:h-[560px] rounded-[2.5rem] overflow-hidden border border-slate-800 shadow-2xl bg-slate-900">
               <img 
-                src="\public\Reinigungsservice.webp" 
+                src="/Reinigungsservice.webp" 
                 alt="DSH Professionelle Reinigung" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
               />
