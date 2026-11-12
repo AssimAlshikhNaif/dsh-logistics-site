@@ -14,6 +14,8 @@ import Impressum from './pages/Impressum';
 import Jobs from './pages/Jobs';
 import Agb from './pages/Agb';
 import About from './pages/About';
+import LocationMap from './components/LocationMap';
+import Testimonials from './components/Testimonials';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -50,6 +52,8 @@ function App() {
               <ReinigungServices />
               <TrackingModule />
               <QuoteForm />
+              <LocationMap />
+              <Testimonials />
             </>
           }
         />

@@ -1,104 +1,134 @@
-import { Factory, Warehouse, HardHat, CheckCircle } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { Warehouse, Building2, Sparkles, ArrowUpRight, ShieldCheck, Check } from 'lucide-react';
 
 export default function ReinigungServices() {
-  const { t, i18n } = useTranslation();
+  const handleLearnMore = () => {
+    const element = document.getElementById('angebot');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
- const services = [
-  {
-    icon: <Factory className="w-12 h-12" />,
-    title: t('clean_serv1_title'),
-    description: t('clean_serv1_desc'),
-    features: t('clean_serv1_features', { returnObjects: true }) as string[],
-    image: 'https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  },
-  {
-    icon: <Warehouse className="w-12 h-12" />,
-    title: t('clean_serv2_title'),
-    description: t('clean_serv2_desc'),
-    features: t('clean_serv2_features', { returnObjects: true }) as string[],
-    image: 'https://images.pexels.com/photos/4481258/pexels-photo-4481258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  },
-  {
-    icon: <HardHat className="w-12 h-12" />,
-    title: t('clean_serv3_title'),
-    description: t('clean_serv3_desc'),
-    features: t('clean_serv3_features', { returnObjects: true }) as string[],
-    // تم التغيير لصورة عقار حديث جاهز للتسليم بنظافة فائقة
-    image: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
-  }
-];
+  const services = [
+    {
+      icon: <Warehouse className="w-6 h-6 text-cyan-400" />,
+      title: "Lager- & Hallenreinigung",
+      description: "Gründliche und zuverlässige professionelle Reinigung von Lager- und Industriehallen für höchste Hygiene- und Sicherheitsstandards in Wittenberg."
+    },
+    {
+      icon: <Building2 className="w-6 h-6 text-cyan-400" />,
+      title: "Gebäudereinigung & Gewerbe",
+      description: "Professionelle Unterhalts- und Endreinigung für Gewerbeobjekte, Büros und Betriebsstätten mit modernsten Reinigungsmethoden."
+    }
+  ];
+
+  const highlights = [
+    "Boden- & Regalreinigung",
+    "Unterhalts- & Endreinigung",
+    "Besenreine Übergabe",
+    "Zertifiziertes Fachpersonal"
+  ];
 
   return (
-    <section id="reinigung" className="py-24 bg-slate-50">
-      <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            {t('clean_header_title')}
+    <section id="reinigung" className="py-28 bg-slate-950 text-white relative overflow-hidden border-t border-slate-800/80">
+      {/* إضاءات خلفية محيطية فاخرة */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        
+        {/* العنوان الرئيسي للقسم */}
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold tracking-widest uppercase backdrop-blur-md shadow-lg mb-4">
+            <Sparkles className="w-4 h-4 text-cyan-400" />
+            Spezialreinigung
+          </div>
+          <h2 className="text-4xl sm:text-6xl font-black text-white tracking-tight mb-6">
+            Professionelle <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Reinigungslösungen</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t('clean_header_subtitle')}
+          <p className="text-base sm:text-lg text-slate-300 font-light leading-relaxed">
+            Höchste Sauberkeitsstandards für Industrie, Logistik und Gewerbeobjekte – DSH Service GmbH sorgt für makellose Ergebnisse.
           </p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-            >
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={service.image} 
-                  alt={service.title} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
+        {/* القسم الرئيسي: صورة مستودع/أرضية نظيفة ومهنية بدون وجوه + تفاصيل الخدمات */}
+        <div className="grid lg:grid-cols-12 gap-10 items-center mb-16">
+          
+          {/* صورة احترافية تعبيرية عن النظافة بدون وجوه (6 أعمدة) */}
+          <div className="lg:col-span-6 relative group">
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[2.5rem] blur-2xl opacity-25 group-hover:opacity-45 transition duration-700"></div>
+            <div className="relative h-[480px] sm:h-[560px] rounded-[2.5rem] overflow-hidden border border-slate-800 shadow-2xl bg-slate-900">
+              <img 
+                src="\public\Reinigungsservice.webp" 
+                alt="DSH Professionelle Reinigung" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
               
-              <div className="p-8">
-                <div className="text-cyan-600 mb-6">{service.icon}</div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed text-sm">
-                  {service.description}
-                </p>
-                <ul className="grid grid-cols-1 gap-2">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-sm text-slate-700">
-                      <div className={`w-1.5 h-1.5 bg-cyan-500 rounded-full ${i18n.language === 'ar' ? 'ml-2' : 'mr-2'}`}></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Quality Section<div className="bg-cyan-600 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden shadow-xl">
-          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-            <div className="max-w-xl">
-              <h3 className="text-3xl font-bold mb-4">{t('clean_quality_title')}</h3>
-              <p className="text-cyan-50 opacity-90">
-                {t('clean_quality_desc')}
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-4 w-full md:w-auto">
-              <div className="bg-white/10 backdrop-blur p-4 rounded-xl text-center">
-                <CheckCircle className="w-8 h-8 mx-auto mb-2 text-white" />
-                <span className="text-xs font-bold uppercase tracking-wider">ISO 9001</span>
-              </div>
-              <div className="bg-white/10 backdrop-blur p-4 rounded-xl text-center">
-                <CheckCircle className="w-8 h-8 mx-auto mb-2 text-white" />
-                <span className="text-xs font-bold uppercase tracking-wider">{t('clean_staff')}</span>
+              {/* بطاقة عائمة داخل الصورة */}
+              <div className="absolute bottom-8 left-8 right-8 p-6 bg-slate-900/90 backdrop-blur-xl rounded-2xl border border-slate-700/60 shadow-2xl flex items-center justify-between">
+                <div>
+                  <span className="text-[11px] font-extrabold text-cyan-400 uppercase tracking-wider bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+                    Höchste Standards
+                  </span>
+                  <p className="text-white font-extrabold text-lg mt-2">DSH Service GmbH Wittenberg</p>
+                </div>
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-white shadow-lg shadow-cyan-500/30">
+                  <ShieldCheck className="w-6 h-6" />
+                </div>
               </div>
             </div>
           </div>
-        </div> */}
-        
+
+          {/* تفاصيل الخدمات والبطاقات (6 أعمدة) */}
+          <div className="lg:col-span-6 space-y-6">
+            {services.map((service, index) => (
+              <div 
+                key={index}
+                className="bg-slate-900/80 p-8 rounded-[2rem] border border-slate-800 hover:border-cyan-500/40 shadow-2xl backdrop-blur-xl transition-all duration-500 group hover:-translate-y-1"
+              >
+                <div className="flex items-start gap-5">
+                  <div className="p-4 bg-cyan-500/10 border border-cyan-500/20 rounded-2xl shrink-0 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-inner">
+                    {service.icon}
+                  </div>
+                  <div className="space-y-3">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-slate-300 text-sm leading-relaxed font-light">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+
+            {/* قائمة سريعة بالميزات */}
+            <div className="p-6 bg-slate-900/50 rounded-2xl border border-slate-800/80 backdrop-blur-sm">
+              <h4 className="font-bold text-sm text-white mb-4 uppercase tracking-wider">Unsere Reinigungs-Garantie:</h4>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {highlights.map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2.5 text-xs text-slate-300 font-medium">
+                    <div className="w-5 h-5 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0">
+                      <Check className="w-3 h-3" />
+                    </div>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-2">
+              <button 
+                onClick={handleLearnMore}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-xl shadow-cyan-500/25 transition-all duration-300 cursor-pointer group"
+              >
+                <span>Angebot für Reinigung anfordern</span>
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </button>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );
