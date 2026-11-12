@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -18,27 +17,22 @@ import LocationMap from './components/LocationMap';
 import Testimonials from './components/Testimonials';
 
 function App() {
-  const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
 
-  // 1. تحديث العنوان والاتجاه عند تغيير اللغة أو المسار
+  // ضبط العنوان الثابت باللغة الألمانية حصرياً وضبط اتجاه الصفحة LTR
   useEffect(() => {
-    // تحديث عنوان المتصفح ليكون مترجماً
-    document.title = t('site_title');
-    
-    // ضبط اتجاه الصفحة (RTL للعربية و LTR للباقي)
-    const dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.dir = dir;
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language, t]);
+    document.title = "DSH Service GmbH";
+    document.documentElement.dir = 'ltr';
+    document.documentElement.lang = 'de';
+  }, []);
 
-  // 2. العودة لأعلى الصفحة عند التنقل بين الروابط
+  // العودة لأعلى الصفحة عند التنقل بين الروابط
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
   return (
-    <div className={`min-h-screen ${i18n.language === 'ar' ? 'font-arabic' : 'font-sans'}`}>
+    <div className="min-h-screen font-sans">
       <Header />
 
       <Routes>
